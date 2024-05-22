@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend-screen KOKOACLONE</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service </span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column"><span>18:43</span></div>
+
+      <!---->
+      <div class="status-bar__column">
+        <span> 110%</span> <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="alt-screen-header">
+      <div class="alt-screen-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-2x"></i
+        ></a>
+      </div>
+
+      <div class="alt-screen-header__title">니콜라스</div>
+      <div class="alt-screen-header__column">
+        <span class="alt-screen-header__column">
+          <span> <i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+          <span> <i class="fa-solid fa-bars fa-2x"></i></span
+        ></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Thursday,March 16,2024</div>
+      <div class="message-row">
+        <img src="screenshots/로터리마크.JPG" alt="" />
+        <div class="message-row__content">
+          <span class="message__author"> 안희경</span>
+          <div class="message-info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time"> 21:50 </span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="message-tworow">
+      <div class="message-info">
+        <span class="message__twotime"> 21:50 </span>
+        <span class="message__bubble__me">What's up?</span>
+      </div>
+    </div>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div clss="reply__column">
+        <input type="text" placeholder="write a message..." />
+        <i class="fa-solid fa-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>your screen is so big!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/42f2c7886f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

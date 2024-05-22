@@ -1,0 +1,20 @@
+#no-mobile {
+  position: absolute;
+  /* 화면의 제일 위로 고정 */
+  z-index: 100;
+  /*  숫자가 클수록 앞에 온다*/
+  height: 100vh;
+  background-color: yellow;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}
+/* 화면이 645 넘어가면  no mobile 이 뜸 */

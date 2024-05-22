@@ -1,0 +1,130 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 11000vh;
+}
+.main-chat {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.chat__timestamp {
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #92a4b2;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 10px;
+}
+
+#chat-screen.status-bar {
+  z-index: 2;
+}
+#chat-screen.alt-header {
+  top: 10px;
+  z-index: 1;
+}
+.message-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 100;
+}
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  align-items: flex-start;
+}
+.message__author {
+  display: flex;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.message__bubble {
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+  margin-left: 7px;
+  padding: 6px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  text-align: center;
+}
+.message__time {
+  font-size: 8px;
+}
+.message__bubble__me {
+  background-color: yellow;
+  color: black;
+  margin-top: 5px;
+  margin-right: 7px;
+  padding: 6px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  text-align: center;
+}
+.message-tworow {
+  display: flex;
+  justify-content: end;
+  margin: 10px 0;
+  width: 100;
+}
+.message__twotime {
+  margin-top: 5px;
+  font-size: 8px;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  /* reply라는 박스가 안에 있는 건텐츠를 가렸을 떄 선만존재하는 박스로
+  만들어줄 떄 사용한다 그러면 안에 있는 컨텐츠가 보이겠지 박스가
+  투명화 되어서 */
+}
+.reply .reply__column:first-child {
+  width: 2%;
+}
+.reply .reply__column:last-child {
+  width: 98%;
+  position: relative;
+}
+.reply input {
+  height: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.reply__column:last-child i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reply__column:last-child button {
+  background-color: yellow;
+
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+.reply:focus-within.reply__column:first-child {
+  display: none;
+}

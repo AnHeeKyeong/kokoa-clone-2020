@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service </span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column"><span>18:43</span></div>
+
+      <!---->
+      <div class="status-bar__column">
+        <span> 110%</span> <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to kokoa Clone</h1>
+      <p class="welcome-header__text">
+        if you have a kokoa Acount, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <!--form action 양식을 추가해서 다른 페이지로 이동시키는 거 가능
+     그리고 method를 적어서 보안성이 강한 서보로 송출할 경우에는
+    "post" 적고  그냥 일반 검색창인 경우에는 "get" 으로 가능-->
+      <input name="username" type="text" placeholder="Email or number" />
+      <input naem="password" type="password" placeholder="password" />
+      <input type="submit" placeholder="Log in" />
+
+      <a href="#">Find kokoa Account or Password </a>
+    </form>
+    <div id="no-mobile">
+      <span>your screen is so big!</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/42f2c7886f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
