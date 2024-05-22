@@ -1,0 +1,36 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 5px 3px;
+  top: 0%;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding 값을 주게 되면 원래의 px값이 무너지고 그자리를 padding 값이
+  채워주기에 안에있던 배열이 무너지는 거임 그러므로
+  박스값을 월래로 유지하고 싶을 때 width :100 이랑 bofder-box값을
+  준다 */
+}
+/* 기존에 했던 배열이 갑자기 무너지는 경우에는 width:100%를 사용해보자
+ */
+/* 상태바 중앙 부로 모으기 */
+.status-bar__column {
+  width: 33%;
+}
+/* 상태바 각 칼럼들 간의 거리를 33%로 띄어서 동일하게 거리두기 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+/* 와이파이랑 no servie 사이의 거리 5px만큼 오른쪽 띄우기 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* 2번쨰 시간 칼럼 을 완전히 중앙으로 다시 맞추기 */
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 마지막 칼럼 은 제일 끑으로 맞추고/ 
+   align-items: center;이거는 개별적으로 옮기고 싶을 때 사용/배터리 정중앙으로 옮겨버리기   */

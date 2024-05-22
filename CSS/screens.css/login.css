@@ -1,0 +1,60 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 이미지등이 아니라 텍스트를 중앙으로 옮기려면 text-align을 사용*/
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  /*transition은 마우스클릭했을 때 서서히 어떤 것이 변하고 몇초정도 변하는지 이야기함*/
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+/*not 뒤에 에 뺴고 적용해라*/
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  /*placeholder는 박스 안에있는 글씨임,rgba의 마지막부분은 명암발기*/
+}
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+  outline: none;
+  border-color: var(--yellow);
+  /*var은 따로css 만들어서 root를 통해서 style.css에 연결 시켜야함*/
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+  /*위의 값은 모서리 둥글게*/
+  /*cursor 는 눌렀을 떄 바뀌는 마우스커서이다*/
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /* a라는 링크는 애초에 파란색으로 뜨는 데 inherit 사용할경우에는
+    애초에 상속받은 색은 inherit(검은색(디폴트값임))이다 */
+  font-size: 13px;
+}

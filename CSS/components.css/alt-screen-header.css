@@ -1,0 +1,28 @@
+.alt-screen-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0; /* 상태바 바로 아래에 위치하도록 상단 마진 제거 */
+}
+.alt-screen-header__title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+.alt-screen-header__column span:last-child {
+  margin-left: 20px;
+}
+.alt-screen-header__column {
+  width: 33%;
+}
+.alt-screen-header__column:last-child {
+  display: flex;
+  justify-content: end;
+}
+.main-screen {
+  display: block;
+}
